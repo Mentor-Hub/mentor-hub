@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import SocialLinks from '../SocialLinks'
 import stedmanHeadshot from '../../../assets/images/Stedman-headshot.png'
 import danHeadshot from '../../../assets/images/dan-headshot.png'
-import veerHeadshot from '../../../assets/images/veer-headshot.png'
+import veerHeadshot from '../../../assets/images/veer-headshot2.jpg'
 
 const SectionContainer = styled.div`
     /* box-sizing: border-box; */

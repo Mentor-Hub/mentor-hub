@@ -82,7 +82,7 @@ export default function TempLandingPage() {
 
                 <MemberSection
                     name={'Dan Engel'}
-                    branch={'USMC'}
+                    branch={'Navy'}
                     role={'Developer'}
                     linkedIn={'linkedin link'}
                     github={'github link'}
