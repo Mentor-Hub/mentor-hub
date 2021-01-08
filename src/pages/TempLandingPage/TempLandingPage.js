@@ -84,8 +84,8 @@ export default function TempLandingPage() {
                     name={'Dan Engel'}
                     branch={'Navy'}
                     role={'Developer'}
-                    linkedIn={'linkedin link'}
-                    github={'github link'}
+                    linkedIn={'https://www.linkedin.com/in/daniel-engel-b85b6957/'}
+                    github={'https://github.com/djengel96'}
                     portfolio={'http://www.yahoo.com'}
                     objName={'dan'}
                 />
