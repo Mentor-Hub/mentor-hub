@@ -89,11 +89,7 @@ export default function TempLandingPage() {
             <div className={'img-container'}></div>
 
             <div className={'figma-container'}>
-                <iframe border='none' outline='none' width="100%" height="400" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fy8tQlMEGSe5cRnD8PVX5sm%2FHack-A-Thon%3Fnode-id%3D0%253A1" allowFullscreen></iframe>
-            {/* <iframe width="328" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FYFLVfiHgyfTNccBB7l8Red%2FVet-Fest-Views%3Fnode-id%3D1265%253A164" allowFullscreen></iframe> */}
-            {/* <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FYFLVfiHgyfTNccBB7l8Red%2FVet-Fest-Views%3Fnode-id%3D1704%253A45667" allowFullscreen></iframe> */}
-            {/* <iframe style={{border: `1px solid orange`, width: `100%`, height: `100%`}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FYFLVfiHgyfTNccBB7l8Red%2FVet-Fest-Views%3Fnode-id%3D652%253A4983" allowFullscreen></iframe> */}
-                {/* <iframe className={'iframe'} title={'figmaEmbed'} style={{border: '1px solid #303030', width: `100%`}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fy8tQlMEGSe5cRnD8PVX5sm%2FHack-A-Thon%3Fnode-id%3D19%253A2185" allowFullscreen></iframe> */}
+                <iframe border='none' outline='none' width="100%" height="400" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fy8tQlMEGSe5cRnD8PVX5sm%2FHack-A-Thon%3Fnode-id%3D0%253A1" allowFullScreen></iframe>
             </div>
 
             <p>{'Check back soon...'}</p>
