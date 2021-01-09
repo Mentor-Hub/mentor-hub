@@ -13,7 +13,7 @@ const PageContainer = styled.div`
         width: 328px;
         height: 80px;
         position: absolute;
-        top: 80px;
+        top: 40px;
         left: calc(50% - 328px/2);
         background: url(${smallLogo});
         background-position: center;
@@ -23,11 +23,14 @@ const PageContainer = styled.div`
     }
 
     & > p {
-        width: 220px;
+        width: 328px;
         height: 48px;
         position: absolute;
-        top: 224px;
-        left: calc(50% - 220px/2);
+        top: 544px;
+        left: calc(50% - 328px/2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: normal;
@@ -40,8 +43,9 @@ const PageContainer = styled.div`
 
     & > h2 {
         width: 328px;
+        height: 32px;
         position: absolute;
-        top: 320px;
+        top: 592px;
         left: calc(50% - 328px/2);
         font-family: 'Open Sans';
         font-style: normal;
@@ -57,9 +61,25 @@ const PageContainer = styled.div`
 
     & > .sections-container {
         position: absolute;
-        top: 416px;
-        width: 100%;
+        width: 328px;
+        top: 624px;
+        left: calc(50% - 328px/2);
         /* border: 2px solid pink; */
+    }
+
+    & > .figma-container {
+        box-sizing: border-box;
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        top: 144px;
+        /* left: calc(50% - 328px/2); */
+        /* border: 1px dashed purple; */
+
+        & > .iframe {
+            width: 100%;
+            height: 100%;
+        }
     }
 `
 
@@ -67,6 +87,15 @@ export default function TempLandingPage() {
     return (
         <PageContainer>
             <div className={'img-container'}></div>
+
+            <div className={'figma-container'}>
+                <iframe border='none' outline='none' width="100%" height="400" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fy8tQlMEGSe5cRnD8PVX5sm%2FHack-A-Thon%3Fnode-id%3D0%253A1" allowFullscreen></iframe>
+            {/* <iframe width="328" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FYFLVfiHgyfTNccBB7l8Red%2FVet-Fest-Views%3Fnode-id%3D1265%253A164" allowFullscreen></iframe> */}
+            {/* <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FYFLVfiHgyfTNccBB7l8Red%2FVet-Fest-Views%3Fnode-id%3D1704%253A45667" allowFullscreen></iframe> */}
+            {/* <iframe style={{border: `1px solid orange`, width: `100%`, height: `100%`}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FYFLVfiHgyfTNccBB7l8Red%2FVet-Fest-Views%3Fnode-id%3D652%253A4983" allowFullscreen></iframe> */}
+                {/* <iframe className={'iframe'} title={'figmaEmbed'} style={{border: '1px solid #303030', width: `100%`}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fy8tQlMEGSe5cRnD8PVX5sm%2FHack-A-Thon%3Fnode-id%3D19%253A2185" allowFullscreen></iframe> */}
+            </div>
+
             <p>{'Check back soon...'}</p>
             <h2>{'The team'}</h2>
             <div className={'sections-container'}>
