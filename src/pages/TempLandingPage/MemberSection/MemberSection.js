@@ -11,7 +11,11 @@ const SectionContainer = styled.div`
     width: 100%;
     min-height: 288px;
     position: relative;
-    /* border: 2px dashed gray; */
+
+    @media (min-width: 768px) {
+            margin:0px 0px 0px 0px;
+            width: 240px;
+        }
 
     & > h3 {
         box-sizing: border-box;
@@ -23,14 +27,12 @@ const SectionContainer = styled.div`
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: bold;
-        /* font-weight: 500; */
         font-size: 24px;
         line-height: 24px;
         text-align: center;
         letter-spacing: 0.02em;
         text-transform: uppercase;
         color: #303030;
-        /* border: 1px dotted blue; */
     }
 
     & > .headshot-container {
@@ -43,7 +45,6 @@ const SectionContainer = styled.div`
         border-radius: 100%;
         background: url(${stedmanHeadshot});
         overflow: hidden;
-        /* border: 1px dotted blue; */
 
         & > img {
             width: 100%;
@@ -65,8 +66,6 @@ const SectionContainer = styled.div`
         line-height: 24px;
         text-align: center;
         color: #303030;
-        /* border: 1px dotted blue; */
-
     }
 
     & > .body-two {
@@ -84,7 +83,6 @@ const SectionContainer = styled.div`
         text-align: center;
         letter-spacing: 0.02em;
         color: #000000;
-        /* border: 1px dotted blue; */
     }
 `
 
