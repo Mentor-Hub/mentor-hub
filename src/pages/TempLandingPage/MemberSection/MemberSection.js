@@ -6,14 +6,15 @@ import danHeadshot from '../../../assets/images/dan-headshot.png'
 import veerHeadshot from '../../../assets/images/veer-headshot2.jpg'
 
 const SectionContainer = styled.div`
-    /* box-sizing: border-box; */
-    margin: 80px 0px 0px 0px;
+    box-sizing: border-box;
+    margin: 0px 0px 64px 0px;
     width: 100%;
-    height: 288px;
+    min-height: 288px;
     position: relative;
     /* border: 2px dashed gray; */
 
     & > h3 {
+        box-sizing: border-box;
         margin: 0px 0px 0px 0px;
         width: 328px;
         position: absolute;
@@ -33,6 +34,7 @@ const SectionContainer = styled.div`
     }
 
     & > .headshot-container {
+        box-sizing: border-box;
         position: absolute;
         top: 56px;
         left: calc(50% - 104px/2);
@@ -50,6 +52,7 @@ const SectionContainer = styled.div`
     }
 
     & > .body-one {
+        box-sizing: border-box;
         margin: 0px 0px 0px 0px;
         width: 328px;
         position: absolute;
@@ -67,6 +70,7 @@ const SectionContainer = styled.div`
     }
 
     & > .body-two {
+        box-sizing: border-box;
         margin: 0px 0px 0px 0px;
         width: 328px;
         position: absolute;

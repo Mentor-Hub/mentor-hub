@@ -5,16 +5,21 @@ import smallLogo from '../../assets/images/logo-small.png'
 
 const PageContainer = styled.div`
     box-sizing: border-box;
-    position: relative;
+    /* position: relative; */
+    padding: 40px 0px 40px 0px;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     & > .img-container {
-        width: 328px;
-        height: 80px;
-        position: absolute;
+        box-sizing: border-box;
+        min-width: 328px;
+        min-height: 80px;
+        /* position: absolute;
         top: 40px;
-        left: calc(50% - 328px/2);
+        left: calc(50% - 328px/2); */
         background: url(${smallLogo});
         background-position: center;
         background-repeat: no-repeat;
@@ -23,11 +28,13 @@ const PageContainer = styled.div`
     }
 
     & > p {
+        box-sizing: border-box;
+        margin: 24px 0px 0px 0px;
         width: 328px;
-        height: 48px;
-        position: absolute;
-        top: 544px;
-        left: calc(50% - 328px/2);
+        min-height: 72px;
+        /* position: absolute;
+        top: 424px;
+        left: calc(50% - 328px/2); */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -41,12 +48,25 @@ const PageContainer = styled.div`
         /* border: 1px dotted blue; */
     }
 
+    & > iframe {
+        box-sizing: border-box;
+        margin: 24px 0px 0px 0px;
+        width: 352px;
+        min-height: 280px;
+        /* position: absolute;
+        top: 144px;
+        left: calc(50% - 328px/2); */
+        border: 2px solid orange;
+    }
+
     & > h2 {
+        box-sizing: border-box;
+        margin: 40px 0px 40px 0px;
         width: 328px;
         height: 32px;
-        position: absolute;
-        top: 592px;
-        left: calc(50% - 328px/2);
+        /* position: absolute;
+        top: 508px;
+        left: calc(50% - 328px/2); */
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: bold;
@@ -59,27 +79,14 @@ const PageContainer = styled.div`
         /* border: 1px dotted blue; */
     }
 
-    & > .sections-container {
-        position: absolute;
-        width: 328px;
-        top: 624px;
-        left: calc(50% - 328px/2);
-        /* border: 2px solid pink; */
-    }
-
-    & > .figma-container {
+    & > .sections-wrapper {
         box-sizing: border-box;
-        width: 100%;
-        height: 400px;
-        position: absolute;
-        top: 144px;
-        /* left: calc(50% - 328px/2); */
-        /* border: 1px dashed purple; */
-
-        & > .iframe {
-            width: 100%;
-            height: 100%;
-        }
+        margin: 0px 0px 0px 0px;
+        width: 328px;
+        /* position: absolute;
+        top: 568px;
+        left: calc(50% - 328px/2); */
+        /* border: 2px solid pink; */
     }
 `
 
@@ -87,14 +94,10 @@ export default function TempLandingPage() {
     return (
         <PageContainer>
             <div className={'img-container'}></div>
-
-            <div className={'figma-container'}>
-                <iframe border='none' outline='none' width="100%" height="400" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fy8tQlMEGSe5cRnD8PVX5sm%2FHack-A-Thon%3Fnode-id%3D0%253A1" allowFullScreen></iframe>
-            </div>
-
             <p>{'Check back soon...'}</p>
+            <iframe title={'Figma Embed'} border='none' outline='none' width="344px" height="400" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fy8tQlMEGSe5cRnD8PVX5sm%2FHack-A-Thon%3Fnode-id%3D0%253A1" allowFullScreen></iframe>
             <h2>{'The team'}</h2>
-            <div className={'sections-container'}>
+            <div className={'sections-wrapper'}>
                 <MemberSection
                     name={'Veer Singh'}
                     branch={'USMC'}
